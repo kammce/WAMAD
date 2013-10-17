@@ -17,7 +17,7 @@
 			</small></div>
 		<div class="body">
 			<div>
-				<h1>.W.A.M.A.D.</h1>
+				<h1 class="autoresize">.W.A.M.A.D.</h1>
 				<h3>
 					<strong>W</strong>eb : 
 					<strong>A</strong>nd : 
@@ -48,8 +48,7 @@
 					</div>
 				</div>
 			</div>
-			<div id="content" style="margin-top:80px; padding-top:40px;">
-			</div>
+			<div id="content" style="margin-top:200px; padding-bottom:50px;"></div>
 		</div>
 		<div class="footer" style="vertical-align:middle;">
 			<p align="center"> &lt; !-- 2013 -- &gt; </p>
@@ -70,7 +69,7 @@
 					<a class="button" href="Intro/Vector/vector_v2.html" target="_blank">Version 2</a>
 				</div>
 			</div>
-			<div style="padding:20px;"><a class="button" href="intro/res.html" target="_blank">Resources</a></div>
+			<div style="padding:20px;"><a class="button" href="Intro/res.html" target="_blank">Resources</a></div>
 		</div>
 		<div id="jquery" class="data-only">
 			<span class="title">Using JQuery</span>
@@ -82,10 +81,10 @@
 		<script>
 		function content(str) {
 			$("#content").css("opacity", "0.0");
-			$("#content").css("margin-top", "100px");
+			$("#content").css("margin-top", "200px");
 			$("#content").html($("#"+str).html());
 			$("#content").animate({
-				marginTop: "0px",
+				marginTop: "100px",
 				opacity: 1.0,
 			}, 500);
 		}
