@@ -1,0 +1,52 @@
+body {
+	/* change the font to droid sans, with a fall back to sans */
+	font-family: "Droid Sans", sans;
+	/* change defualt font size to 25 */
+	font-size:25px;
+	/* push the contents of body 15% the distance of the height of the window */ 
+	padding-top:15%;
+}
+hr {
+	border: 0;
+	background-color: green;
+	height:1px;
+}
+form.form {
+	text-align: left;
+}
+form.form input {
+	font-size:15px;
+	padding:5px;
+	width: 20%;
+	min-width: 200px;
+	border: 1px solid gray;
+	outline: 0px;
+	background-color: white;
+}
+form.form input:focus {
+	border: 1px solid blue;
+	box-shadow: 5px 5px 5px #ccc;
+}
+form.form span {
+	width: 40%;
+	display:inline-block;
+	margin-right:5px;
+	text-align: right;
+}
+form.form div {
+	margin:10px;
+}
+button {
+	padding: 10px;
+	border: 1px solid gray;
+}
+button:hover {
+	cursor: pointer;
+}
+div.container {
+	margin:auto; 
+	width:80%; 
+	height: 90%;
+	min-width: 400px;
+	text-align:center;
+}

@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<script src="jquery-2.0.3.min.js"></script>
+	</head>
+	<body>
+		<div id="controller"></div>
+		<div class="slideshow" id="slideshow">
+			<div class="slide">
+				<div class="title">Khalil's Simple Presenation Framework</div>
+				<div class="body">
+					<p> Hello WAMADians!</p>
+					<p> Today we will be going over JavaScript: </p>
+					<ul>
+						<li>What is JavaScript?</li>
+						<li>What uses JavaScript?</li>
+						<li>What does JavaScript looks like?</li>
+						<li>Why JavaScript is AWESOME!!!</li>
+					</ul>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="title">More CSS and HTML </div>
+				<div class="body">
+					<p class="lead">Today in CSS and HTML we will be going over: </p>
+					<ul>
+						<li>Selectors</li>
+						<li>Class inheirentance</li>
+						<li>Slim HTML</li>
+					</ul>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="title">JQuery JavaScript Library 1/2</div>
+				<div class="body">
+					<p class="lead"> JQuery is a bunch of JavaScript functions piled up together to make things easier for web designers. </p>
+					<p class="lead"> JQuery is a shorthand to the longer JavaScript object methods in JavaScript. It uses CSS selectors to get elements </p>
+					<p> Example : </p>
+					<p> $("#test").html() === document.getElementById("test").innerHTML </p> 
+					<p> $("input[name='password']").val() === document.querySelector("input[name='password']").value </p> 
+				</div>
+			</div>
+			<div class="slide">
+				<div class="title">JQuery JavaScript Library 2/2</div>
+				<div class="body">
+					<p class="lead"> It also has a bunch of useful functions that do not readily exist in JavaScript like: </p>
+					<p> $("#test").animate() </p>
+					<p> $.post() </p>
+					<p> $("#test").fadeIn() </p>
+					<p> ... etc ... </p>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="title">JavaScript Events</div>
+				<div class="body" >
+					<p> Thus far, we have been dealing with events on the HTML side.</p>
+					<p> No we will be dealing with events solely on the JavaScript side.</p>
+				</div>
+			</div>
+		</div>
+		<script src="controller.js"></script>
+	</body>
+</html>

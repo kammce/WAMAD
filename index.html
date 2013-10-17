@@ -1,0 +1,94 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="layout.css">
+	</head>
+	<body>
+		<div class="header">
+			<small>Khalil's E-mail: 
+				<em>
+					<a href="mailto:khalil.estell@sjsu.edu">khalil.estell@sjsu.edu</a>
+				</em>
+				:: GitHub:
+				<em>
+					<a href="https://github.com/kammce/WAMAD">
+						https://github.com/kammce/WAMAD
+					</a>
+				</em> 
+			</small></div>
+		<div class="body">
+			<div>
+				<h1>.W.A.M.A.D.</h1>
+				<h3>
+					<strong>W</strong>eb : 
+					<strong>A</strong>nd : 
+					<strong>M</strong>obile : 
+					<strong>A</strong>pplications : 
+					<strong>D</strong>evlopment
+				</h3>
+			</div>
+			<div>
+				<div class="outer-circle" onclick="content('introduction')">
+					<div class="green inner enable"><p>I</p>
+					</div>
+				</div>
+				<div class="outer-circle" onclick="content('jquery')">
+					<div class="blue inner enable"><p>J</p>
+					</div>
+				</div>
+				<div class="outer-circle">
+					<div class="purple inner disable"><p>?</p>
+					</div>
+				</div>
+				<div class="outer-circle">
+					<div class="yellow inner disable"><p>?</p>
+					</div>
+				</div>
+				<div class="outer-circle">
+					<div class="red inner disable"><p>?</p>
+					</div>
+				</div>
+			</div>
+			<div id="content" style="margin-top:80px; padding-top:40px;">
+			</div>
+		</div>
+		<div class="footer" style="vertical-align:middle;">
+			<p align="center"> &lt; !-- 2013 -- &gt; </p>
+		</div>
+		<!-- DATA ONLY -->
+		<div id="introduction" class="data-only">
+			<div class="spacer-sm">
+				<span class="title">Introduction to HTML and CSS</span>
+				<hr class="stage">
+				<a class="button" href="Intro/Form/index.html" target="_blank">Final Result</a>
+			</div>
+			<div class="spacer-sm">
+				<span class="title">Introduction to JavaScript</span>
+				<hr class="stage">
+				<div>
+					<a class="button" href="Intro/Vector/pre_vector.html" target="_blank">Presentation</a>
+					<a class="button" href="Intro/Vector/vector_v1.html" target="_blank">Version 1</a>
+					<a class="button" href="Intro/Vector/vector_v2.html" target="_blank">Version 2</a>
+				</div>
+			</div>
+			<div style="padding:20px;"><a class="button" href="intro/res.html" target="_blank">Resources</a></div>
+		</div>
+		<div id="jquery" class="data-only">
+			<span class="title">Using JQuery</span>
+				<hr class="stage">
+			<a class="button" target="_blank">Presentation **</a>
+			<a class="button" href="http://jquery.com/" target="_blank">Resources</a>
+		</div>
+		<script src="jquery-2.0.3.min.js"></script>
+		<script>
+		function content(str) {
+			$("#content").css("opacity", "0.0");
+			$("#content").css("margin-top", "100px");
+			$("#content").html($("#"+str).html());
+			$("#content").animate({
+				marginTop: "0px",
+				opacity: 1.0,
+			}, 500);
+		}
+		</script>
+	</body>
+</html>
