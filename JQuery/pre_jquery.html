@@ -1,32 +1,20 @@
 <html>
 	<head>
-		<link href="pv_style.css" rel="stylesheet" type="text/css" />
-		<script src="jquery-2.0.3.min.js"></script>
+		<link href="pre_style.css" rel="stylesheet" type="text/css" />
+		<script src="../jquery-2.0.3.min.js"></script>
 	</head>
 	<body>
 		<div id="controller"></div>
 		<div class="slideshow" id="slideshow">
 			<div class="slide">
-				<div class="title">Khalil's Simple Presenation Framework</div>
+				<div class="title">Introduction to JQuery</div>
 				<div class="body">
-					<p> Hello WAMADians!</p>
-					<p> Today we will be going over JavaScript: </p>
+					<p> Hello WAMADians! </p>
+					<p> Today we will be going over JQuery: </p>
 					<ul>
-						<li>What is JavaScript?</li>
-						<li>What uses JavaScript?</li>
-						<li>What does JavaScript looks like?</li>
-						<li>Why JavaScript is AWESOME!!!</li>
-					</ul>
-				</div>
-			</div>
-			<div class="slide">
-				<div class="title">More CSS and HTML </div>
-				<div class="body">
-					<p class="lead">Today in CSS and HTML we will be going over: </p>
-					<ul>
-						<li>Selectors</li>
-						<li>Class inheirentance</li>
-						<li>Slim HTML</li>
+						<li>What is JQuery?</li>
+						<li>Why use JQuery?</li>
+						<li>What can JQuery do for you?</li>
 					</ul>
 				</div>
 			</div>
@@ -37,7 +25,7 @@
 					<p class="lead"> JQuery is a shorthand to the longer JavaScript object methods in JavaScript. It uses CSS selectors to get elements </p>
 					<p> Example : </p>
 					<p> $("#test").html() === document.getElementById("test").innerHTML </p> 
-					<p> $("input[name='password']").val() === document.querySelector("input[name='password']").value </p> 
+					<p> $("input[name='password']").val() === document.querySelector("input[name='password']").value </p>
 				</div>
 			</div>
 			<div class="slide">
@@ -45,19 +33,32 @@
 				<div class="body">
 					<p class="lead"> It also has a bunch of useful functions that do not readily exist in JavaScript like: </p>
 					<p> $("#test").animate() </p>
+					<p> $("#test(gt:2)").css('display', 'none') </p>
 					<p> $.post() </p>
 					<p> $("#test").fadeIn() </p>
 					<p> ... etc ... </p>
 				</div>
 			</div>
 			<div class="slide">
-				<div class="title">JavaScript Events</div>
+				<div class="title">JQuery Events</div>
 				<div class="body" >
 					<p> Thus far, we have been dealing with events on the HTML side.</p>
 					<p> No we will be dealing with events solely on the JavaScript side.</p>
+					<p> $("button").on('click', function() { /* do something */ });</p>
+					<p> or </p>
+					<p> $("button").click(function(){ }); </p>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="title">JQuery Animations and setTimeout</div>
+				<div class="body">
+					<p>$("#box").animate({marginLeft: "50px"}, 500); </p>
+					<p>$("#box").fadeIn(500); </p>
+					<br>
+					<p>var timer = setTimeout(function() {}, [time ms]); </p>
 				</div>
 			</div>
 		</div>
-		<script src="pv_controller.js"></script>
+		<script src="pre_controller.js"></script>
 	</body>
 </html>
