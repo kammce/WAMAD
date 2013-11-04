@@ -1,0 +1,131 @@
+<html>
+	<head>
+		<link href="pre_style.css" rel="stylesheet" type="text/css" />
+		<script src="../jquery-2.0.3.min.js"></script>
+	</head>
+	<body>
+		<div id="controller"></div>
+		<div class="slideshow" id="slideshow">
+			<div class="slide">
+				<div class="title">Introduction to PHP &amp; AJAX</div>
+				<div class="body">
+					<p> Hello WAMADians! </p>
+					<p> Today we will be going over PHP: </p>
+					<ul>
+						<li>What is PHP?</li>
+						<li>Why and How to use PHP?</li>
+						<li>What PHP looks like?</li>
+					</ul>
+					<p> Today we will be going over AJAX: </p>
+					<ul>
+						<li>What does AJAX stand for?</li>
+						<li>Why should anyone care?</li>
+						<li>How does asynchronous programming works?</li>
+					</ul>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="title">What is PHP 1/2</div>
+				<div class="body">
+					<p>PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML. (<em>http://www.php.net/manual/en/intro-whatis.php</em>)</p>
+					Things to note:
+					<ul>
+						<li>Scripting Language: pros and cons of scripting languages, but it can also be Object Oriented.</li>
+						<li style="text-decoration: line-through;">Embedded into HTML: can be inserted into HTML</li>
+						<li>Preprocessor?... like "#define" in C or "private static final" in Java. But can do more then just preprocess.</li>
+					</ul>
+					Pros:
+					<ul>
+						<li>Apache and PHP are attached at the hip.</li>
+						<li>I have seen a version for PHP on every OS that I can think of.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="title">What is PHP 2/2</div>
+				<div class="body">
+					<p class="lead">What PHP looks like:</p>
+					<textarea style="font-size:30px; width:100%;" rows="10">
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Example&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;?php
+            echo "Hi, I'm a PHP script!";
+        ?&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</textarea>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="title">Why and How to use PHP?</div>
+				<div class="body">
+					<p class="lead">Why use PHP?</p>
+					<ul>
+						<li>For Server Side Scripting</li>
+						<li>For Command line scripting</li>
+						<li style="text-decoration: line-through;">For Writing desktop applications</li>
+					</ul>
+					<p class="lead">How to use PHP?</p>
+					<ul>
+						<li>HTML Embedded (preprocessor)</li>
+						<li>Server-side (procedural/object-oriented) </li>
+						<li>Hybrid (mixed)</li>
+					</ul>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="title">What PHP looks like?</div>
+				<div class="body">
+					<p>What makes php special</p>
+					<ul>
+						<li>Variables start with a $ sign</li>
+						<li>Concatenate strings is with . not a + sign.</li>
+						<li>No explicit variable types like javascript, but there is type casting</li>
+						<li>Double quotes are not the same as single quotes. Examples below:</li>
+						<li>PHPs many functions!</li>
+						<li>Server side function like Database calles/queries, file handling, image manipulation, Session variables, Cyptography, Credit card handling, Compression etc. etc...</li>
+					</ul>
+					<textarea style="font-size:30px; width:100%;" rows="6">
+$var = 5; // auto typeset to integer
+$str = "Hello" . ", World"; // results in "Hello, World"
+$str .= " Peace"; // Results in "Hello, World Peace"
+$double = "$var = $var"; Results in 5 = 5
+$single = '$var = $var'; Results in $var = $var
+$proper = '$var = ' . $var; Results in $var = 5</textarea>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="title">What does AJAX stand for</div>
+				<div class="body">
+					<p>Asynchronous JavaScript and XML... that is all</p>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="title">How does AJAX works?</div>
+				<div class="body">
+					<a href="ajax-fig1.png">Figure 1: The traditional model for web applications (left) compared to the Ajax model (right).</a>
+					<br><br>
+					<a href="ajax-fig2.png">Figure 2: The synchronous interaction pattern of a traditional web application (top) compared with the asynchronous pattern of an Ajax application (bottom).</a>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="title">Why should anyone care?</div>
+				<div class="body">
+					<p>Well... because!</p>
+					<p>J.K. But see <a href="index.php">The AJAX PHP demo</a> to see what I mean!</p>
+					<p>No need to explain after seeing that</p>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="title">Resources</div>
+				<div class="body">
+					<p>J. J. Garrett. "Ajax: A New Approach to Web Applications." <a href="http://www.adaptivepath.com/ideas/ajax-new-approach-web-applications/">http://www.adaptivepath.com/ideas/ajax-new-approach-web-applications/</a>. 18 Feb 2005</p>
+					<p>"What is PHP?" <a href="http://www.php.net/manual/en/intro-whatis.php">http://www.php.net/manual/en/intro-whatis.php</a>. 4 Nov 2013</p>
+				</div>
+			</div>			
+		</div>
+		<script src="pre_controller.js"></script>
+	</body>
+</html>

@@ -96,9 +96,17 @@ div.outer-circle:hover {
 div.outer-circle div p {
 	color:white;
 	font-weight: bolder;
-	font-size: 500%;
-	margin-top: 2%;
-	margin-left:7%;
+	font-size: 400%;
+	margin-top: 15%;
+	margin-left:3%;
+	font-family: 'Droid Sans', sans;
+}
+div.outer-circle div p.small {
+	color:white;
+	font-weight: bolder;
+	font-size: 300%;
+	margin-top: 22%;
+	margin-left:3%;
 	font-family: 'Droid Sans', sans;
 }
 strong {

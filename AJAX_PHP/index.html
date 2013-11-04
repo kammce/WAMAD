@@ -1,0 +1,74 @@
+<html>
+<head>
+	<title>AJAX + PHP :)</title>
+	<style>
+	.center-peice {
+		width: 80%;
+		height: 200px;
+		margin: auto;
+		text-align: center;
+	}
+	.bottom-peice {
+		width: 80%;
+		height: 200px;
+		margin: auto;
+		margin-top: 100px;
+		text-align: center;
+	}
+	.forms {
+		width: 30%; 
+		text-align: left; 
+		margin: auto; 
+		display: inline-block;
+	}
+	</style>
+	<script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+</head>
+<body>
+	<div class="center-peice">
+		<input type="text">
+		<h1>Who wants a Linux Tutorial? (1-5)</h1>
+		<form class="forms" method="GET" action="reciever.php">
+			<h3>Using HTML Forms</h3>
+			<label><input type="radio" name="decision" value="5">5) Hell Yea!! Give it to me!</label>
+			<br>
+			<label><input type="radio" name="decision" value="4">4) Sure, that would be great</label><br>
+			<label><input type="radio" name="decision" value="3">3) That's cool I guess</label>
+			<br>
+			<label><input type="radio" name="decision" value="2">2) I see no point in learning it.</label>
+			<br>
+			<label><input type="radio" name="decision" value="1">1) Get that filth out of my face!</label>
+			<input type="hidden" value="false" name="ajax">
+			<input type="submit" value="PHP FORM SUBMIT">
+		</form>
+		<div class="forms">
+			<h3>Using AJAX Sync</h3>
+			<label><input type="radio" name="decision" value="5">5) Hell Yea!! Give it to me!</label>
+			<br>
+			<label><input type="radio" name="decision" value="4">4) Sure, that would be great</label><br>
+			<label><input type="radio" name="decision" value="3">3) That's cool I guess</label>
+			<br>
+			<label><input type="radio" name="decision" value="2">2) I see no point in learning it.</label>
+			<br>
+			<label><input type="radio" name="decision" value="1">1) Get that filth out of my face!</label>
+			<button id="ajax_sub">AJAX SUBMIT</button>
+		</div>
+		<div class="forms">
+			<h3>Using AJAX ASync</h3>
+			<label><input type="radio" name="decision" value="5">5) Hell Yea!! Give it to me!</label>
+			<br>
+			<label><input type="radio" name="decision" value="4">4) Sure, that would be great</label><br>
+			<label><input type="radio" name="decision" value="3">3) That's cool I guess</label>
+			<br>
+			<label><input type="radio" name="decision" value="2">2) I see no point in learning it.</label>
+			<br>
+			<label><input type="radio" name="decision" value="1">1) Get that filth out of my face!</label>
+			<button id="ajax_sub_a">AJAX SUBMIT</button>
+		</div>
+	</div>
+	<div class="bottom-peice" id="poll_results">
+		<h2>Poll Results from AJAX</h2>
+	</div>
+	<script type="text/javascript" src="messenger.js"></script>
+</body>
+</html>
